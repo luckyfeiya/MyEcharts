@@ -52,7 +52,6 @@ header .showTime {
 .mainbox .panel {
   position: relative;
   height: 3.875rem;
-  background-color: pink;
   border: 1px solid rgba(25, 186, 139, 0.17);
   background: url(../images/line\(1\).png) rgba(255, 255, 255, 0.03);
   padding: 0 0.1875rem 0.5rem;
@@ -118,7 +117,6 @@ header .showTime {
 }
 .mainbox .panel .chart {
   height: 3rem;
-  background-color: pink;
 }
 .mainbox .no {
   background: rgba(101, 132, 226, 0.1);
