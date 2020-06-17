@@ -1,0 +1,262 @@
+// css 初始化
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../images/bg.jpg) no-repeat top center;
+    line-height: 1.15;
+}
+li{
+    list-style: none;
+}
+// 声明图标字体
+@font-face {
+    font-family: electronicFont;
+    src: url(../font/DS-DIGIT.TTF);
+  }
+// 头部盒子
+header{
+    position: relative;
+    height: 1.25rem;
+    background-color: pink;
+    background: url(../images/head_bg.png)
+    no-repeat;
+    background-size: 100% 100%;
+    h1{
+        color: #fff;
+        font-size: .475rem;
+        text-align: center;
+        line-height: 1rem;
+    }
+    .showTime{
+        position: absolute;
+        right: .375rem;
+        top: 0;
+        line-height: .9375rem;
+        color: rgba(255,255,255,.7);
+        font-size: .25rem;
+    }
+}
+
+// 页面主题部分
+.mainbox{
+    min-width: 1024px;
+    max-width: 1920px;
+    margin: 0 auto;
+    // background-color: pink;
+    padding: .125rem .125rem 0;
+    display: flex;
+    .column{
+        flex: 3;
+        &:nth-child(2){
+            flex: 5;
+            margin: 0 .125rem .1875rem;
+        }
+    }
+    .panel{
+        position: relative;
+        height: 3.875rem;
+        background-color: pink;
+        border: 1px solid rgba(25, 186, 139, 0.17);
+        background: url(../images/line\(1\).png) rgba(255,255,255,.03);
+        padding: 0 .1875rem .5rem;
+        margin-bottom: .1875rem;
+        &::before{
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            width: 10px;
+            height: 10px;
+            border: 2px solid #02a6b5;
+            border-bottom: 0;
+            border-right: 0;
+            content: "";
+        }
+        &::after{
+            position: absolute;
+            top: -1px;
+            right: -1px;
+            width: 10px;
+            height: 10px;
+            border: 2px solid #02a6b5;
+            border-bottom: 0;
+            border-left: 0;
+            content: "";
+        }
+        .panel-footer{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            &::before{
+                position: absolute;
+                top: -11px;
+                left: -1px;
+                width: 10px;
+                height: 10px;
+                border: 2px solid #02a6b5;
+                border-right: 0;
+                border-top: 0;
+                content: "";
+            }
+            &::after{
+                position: absolute;
+                top: -11px;
+                right: -1px;
+                width: 10px;
+                height: 10px;
+                border: 2px solid #02a6b5;
+                border-left: 0;
+                border-top: 0;
+                content: "";
+            }
+        }
+        h2{
+            height: .6rem;
+            color: #fff;
+            line-height: .6rem;
+            text-align: center;
+            font-size: .25rem;
+            font-weight: normal;
+        }
+        .chart{
+            height: 3rem;
+            background-color: pink;
+        }
+    }
+    .no{
+        background: rgba(101,132,226,0.1);
+        padding: 0.1875rem;
+        .no-hd{
+            position: relative;
+            border: 1px solid rgba(25,186,139,.17);
+            &::before{
+                position: absolute;
+                left: -1px;
+                top: -1px;
+                width: .375rem;
+                height: .125rem;
+                border-top: 2px solid #02a6b5;
+                border-left: 2px solid #02a6b5;
+                content: "";
+            }
+            &::after{
+                position: absolute;
+                bottom: -1px;
+                right: -1px;
+                width: .375rem;
+                height: .125rem;
+                border-bottom: 2px solid #02a6b5;
+                border-right: 2px solid #02a6b5;
+                content: "";
+            }
+            ul{
+                display: flex;
+                li{
+                    flex: 1;
+                    text-align: center;
+                    line-height: 1rem;
+                    font-size: .875rem;
+                    color: #ffeb7b;
+                    font-family: electronicFont;
+                }
+                li:nth-child(1){
+                    position: relative;
+                }
+                li:nth-child(1)::after{
+                    position: absolute;
+                    content:"";
+                    width: 1px;
+                    right: 0;
+                    height: 50%;
+                    top: 25%;
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
+        .no-bd{
+            ul{
+                display: flex;
+                li{
+                    flex: 1;
+                    text-align: center;
+                    color: rgba(255, 255, 255, 0.7);
+                    font-size: 0.225rem;
+                    height: .5rem;
+                    line-height: .5rem;
+                    padding-top: .125rem;
+                }
+            }
+        }
+    }
+    .map{
+        height: 10.125rem;
+        position: relative;
+        .map1{
+            width: 6.475rem;
+            height: 6.475rem;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background: url(../images/map.png) no-repeat;
+            background-size: 100% 100%;
+            opacity: .3;
+        }
+        .map2{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 8.0375rem;
+            height: 8.0375rem;
+            background: url(../images/lbx.png);
+            background-size: 100% 100%;
+            animation: rotate1 15s linear infinite;
+            opacity: .6;
+        }
+        .map3{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 7.075rem;
+            height: 7.075rem;
+            background: url(../images/jt.png);
+            background-size: 100% 100%;
+            animation: rotate2 15s linear infinite;
+            opacity: .6;
+        }
+        .chart{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: pink;
+        }
+        @keyframes rotate1 {
+            from {
+                transform: translate(-50%,-50%)
+                rotate(0deg);
+            }
+            to{
+                transform: translate(-50%,-50%) 
+                rotate(360deg);
+            }
+        }
+
+        @keyframes rotate2 {
+            from {
+                transform: translate(-50%,-50%)
+                rotate(0deg);
+            }
+            to{
+                transform: translate(-50%,-50%) 
+                rotate(-360deg);
+            }
+        }
+    }
+}
