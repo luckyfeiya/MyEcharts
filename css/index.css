@@ -47,6 +47,7 @@ header .showTime {
 }
 .mainbox .column:nth-child(2) {
   flex: 5;
+  overflow: hidden;
   margin: 0 0.125rem 0.1875rem;
 }
 .mainbox .panel {
@@ -226,6 +227,7 @@ header .showTime {
   opacity: 0.6;
 }
 .mainbox .map .chart {
+  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
