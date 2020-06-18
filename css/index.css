@@ -57,6 +57,11 @@ header .showTime {
   padding: 0 0.1875rem 0.5rem;
   margin-bottom: 0.1875rem;
 }
+.mainbox .panel h2 a {
+  margin-left: 0.25rem;
+  color: #fff;
+  text-decoration: none;
+}
 .mainbox .panel::before {
   position: absolute;
   top: -1px;
@@ -226,7 +231,6 @@ header .showTime {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: pink;
 }
 @keyframes rotate1 {
   from {
