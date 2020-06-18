@@ -1596,7 +1596,6 @@ series: [
         label: {
           fontSize: 10
         },
-      }
     ]
   };
 ```
